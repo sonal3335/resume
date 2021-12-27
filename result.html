@@ -1,0 +1,23 @@
+<html>
+<body onload="takevalue()">
+<span id="result"></span>
+<script>
+function takevalue()
+{
+	var fullname = sessionStorage.getItem("fullname");
+    var email = sessionStorage.getItem("email");
+	var education=sessionStorage.getItem("education");
+    var address = sessionStorage.getItem("address");
+	var mobile = sessionStorage.getItem("mobile");
+    var year= sessionStorage.getItem("year");
+	var hobbies=sessionStorage.getItem("hobbies");
+	var grade=sessionStorage.getItem("grade");
+	var skills=sessionStorage.getItem("skills");
+    var sliderValue = sessionStorage.getItem("sliderValue");
+	var genderselection = sessionStorage.getItem("genderselection");
+	document.write("<head><title>Resume</title><table border=1 style ='border: 2px solid black;text-align:center;width:20%;margin:0 auto';<th><td><table border = 1 style ='border: 2px solid black;text-align:center,width:60%;'></head><table align='center'><tr><th><h1>Resume<h1></th></tr><tr><th align='left'> <h3>Name: "+ fullname + "</h3> <h3>Email: "+ email + "</h3> <h3>Phone:  " + mobile + "</h3> <h3>Address: "+ address +"</h3><br><br><h2 align='left'>Education</h2><table border=1 style ='border: 2px solid black;text-align:center;width:60%;';><tr><th> Sr.No</th><th>Education</th><th>Year of Passing</th><th>Grade</th></tr><tr><td>1</td><td>"+education+"</td><td>"+year+"</td><td>"+grade+"</td></tr></table><h2 align='left'>Skills</h2><table border=1 style ='border: 2px solid black;text-align:center;width:60%;';><tr><th> Sr.No</th><th>Skills</th><th>Level</th><tr><td>1</td><td>"+skills+"</td><td>"+sliderValue+"</td></tr></table><h2 align='left'>Hobbies : "+hobbies+"</h2></th></tr></table>");
+}
+</script>
+</center>
+</body>
+</html>
